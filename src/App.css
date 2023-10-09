@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css?family=Barlow:400,600,800";
+@import "https://fonts.googleapis.com/css?family=Fraunces:700,900";
 .App {
   text-align: center;
 }
@@ -28,11 +30,76 @@
   color: #61dafb;
 }
 
+body, p{
+  font-family: 'Barlow', sans-serif !important;
+}
+
+h5, h6,h2{
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 700;
+}
+
+h3{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 800 !important;
+}
+
+.fraunces{
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 800 !important;
+}
+
+a{
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a:hover{
+  color: #fff !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.text-info-app{
+  color: hsl(167, 40%, 24%)!important;
+}
+
+.text-blue{
+  color: hsl(212, 27%, 19%) !important
+}
+
+.bg-primary-app{
+  background-color: #3DBEFF !important;
+}
+
+#principalNav a:hover{
+  color: #000 !important;
+  font-family: 'Fraunces', sans-serif !important;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  padding: 10px 20px 10px 20px;
+}
+
+a.learnyellow:hover{
+  color: #000 !important;
+  text-decoration: solid underline yellow 4px !important;
+}
+
+.learnpink:hover{
+  color: #000 !important;
+  text-decoration: solid underline pink 4px !important;
+}
+
+@media (max-width: 768px) {
+  .arrow{
+    height: 50px !important;
+    width: auto !important;
   }
 }
